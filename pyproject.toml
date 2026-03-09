@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "prost-reflect-o3"
+version = "0.1.0"
+description = "Minimal to prost-reflect that allow decoding arbitrary protobuf messages without codegen."
+readme = "README.md"
+requires-python = ">=3.13"
+
+[dependency-groups]
+dev = [
+    "protobuf>=7.34.0",
+    "pytest>=9.0.2",
+]
